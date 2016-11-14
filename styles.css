@@ -1,0 +1,575 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin:0px;
+	/*background:#003366; /* background of the main page */
+    background:white; /* background of the main page */
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:62.5%;
+}
+a {
+	color: #004d99;
+	text-decoration: none;
+	font-weight: bold;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+
+
+h1 {font-size:2.0em; font-weight:bold; color:#980000;}
+
+h2 {font-size:1.8em; font-weight:bold;}
+
+h3 {font-size:1.6em}
+
+h4 {font-size:1.4em}
+
+h5 {font-size:1.2em}
+
+h6 {font-size:1.0em}
+
+p {font-size:1.2em}
+
+INPUT, SELECT, TH, TD {font-size:1.2em}
+
+img {border:0;}
+
+ul li, ul li p, p li, li p, ol li {font-size:1.2em}
+
+ul li ul li {font-size:1em}
+ul li ol li {font-size:1em}
+ol li ul li {font-size:1em}
+ol li ol li {font-size:1em}
+
+
+ul li ul li ul li {font-size:1em}
+
+/*This can add a background to the CSU unversal banner*/
+#csubanner_area {
+	width:100%;
+	background:white;
+
+}
+
+/* This is the red line below the banner */
+
+#headerbar_stretch {
+	background: url(../images/template/headerbar_back.jpg);
+	width:100%;
+	height:6px;
+}
+
+/*Start Breadcrumb styles*/
+#breadcrumb {
+	font-size:1em;
+	padding-top: 20px;
+}
+#breadcrumb span {
+	color:#980000;
+}
+/*End Breadcrumb Styles*/
+
+/*Start subheader*/
+
+#subbanner_stretch {
+	background:#003366;
+	width:100%;
+	height:90px;
+}
+
+#subbanner {
+	width:960px;
+	height:90px;
+	margin:0 auto 0 auto;
+}
+
+/*End subheader*/
+
+/* Start Main page structure elements */
+#container {
+	width:960px;
+	margin: 0px auto 0px auto;
+	overflow:hidden;
+	position:relative;
+}
+
+#dropshad_sides {
+	width:980px;
+	margin:0 auto 0 auto;
+	background:black url(/images/template/dropshad_sides.jpg);
+}
+#dropshad_bottom {
+	background:#000000 url(/images/template/dropshad_bottom.jpg);
+	width:980px;
+	margin:0 auto 0 auto;
+	padding:0;
+	height:10px;
+}
+/* End Main page structure elements */
+
+
+/*start main styles*/
+
+/*the main div contains everything between the subbanner and the footer*/
+
+#main {
+}
+
+#colmask {
+	position:relative;	/* This fixes the IE7 overflow hidden bug and stops the layout jumping out of place */
+	clear:both;
+	float:left;
+	width:100%;			/* width of whole page */
+	overflow:hidden;		/* This chops off any overhanging divs */
+	background:#fff;		/* Left column background colour */
+}
+#colmid {
+	float:left;
+	width:200%;
+	position:relative;
+	left:240px;               /* Width of right column */
+	background:#fff;    	 /*Centre column background colour */
+}
+#colright {
+	float:left;
+	width:100%;
+	position:relative;
+	left:50%;
+	margin-left:-515px;
+	background:#fff;    	 /*Right column background colour */
+}
+#col1wrap {
+	float:right;
+	width:50%;
+	position:relative;
+	right:100%;
+}
+#col1pad {
+	margin:0 15px 0 530px;
+	overflow:hidden;
+}
+#col1 {
+	width:100%;
+	overflow:hidden;
+	margin-top:15px;
+}
+#col2 {
+	float:left;
+	width:210px;
+	position:relative;
+	margin-left:-50%;
+	left:290px;
+	overflow:hidden;
+	margin-top:15px;
+}
+
+#col1_bore {
+	width:100%;
+	overflow:hidden;
+	margin-top:15px;
+}
+#col2_bore {
+	float:left;
+	width:210px;
+	position:relative;
+	margin-left:-50%;
+	left:290px;
+	overflow:hidden;
+	margin-top:15px;
+}
+
+#col3 {
+	float:left;
+	width:245px;
+	position:relative;
+	left:15px;
+	overflow:hidden;
+	margin-top:15px;
+}
+.more_link {
+}
+/*end main columns*/
+
+/*footer styles */
+
+#footer {
+	height:75px;
+	width:100%;
+	float:left;
+	clear:both;
+	color:#000;
+	font-size:1.2em;
+	background:#FFFFFF;
+	/* padding added by Derek for spacing */
+	padding-bottom: 15px;
+}
+#footerother {
+	height: 70px;
+	width:100%;
+}
+#dept_info {
+	width: 25%;
+	float: left;
+	margin: 3px 5px 4px 5px;
+}
+#comments {
+	width: 45%;
+	text-align: center;
+	float: left;
+	margin: 3px auto 4px auto;
+}
+#csu {
+	width: 25%;
+	float: right;
+	margin: 3px 5px 4px 5px;
+	text-align: right;
+}
+.smallcentered {
+	text-align:center;
+	font-size:1em;
+	clear:both;
+	padding:20px;
+	color:#FFF;
+}
+.smallcentered a {
+	color:#FFF;
+}
+.hidden {
+	position:absolute; /* relative to window */
+	visibility: hidden;
+	left: 0px;
+	top: 0px; /* not negative so it doesn't mess up IE 7 */
+}
+/* end footer */
+
+/* doublepage column container */
+	.colmask_doublepage {
+	clear:both;
+	float:left;
+	width:100%;			/* width of whole page */
+	overflow:hidden;		/* This chops off any overhanging divs */
+}
+/* doublepage column settings */
+	.doublepage .colright,  .doublepage .colmid,  .doublepage .colleft {
+	float:left;
+	width:960px;
+	position:relative;
+}
+.doublepage .col1,  .doublepage .col2,  .doublepage .col3 {
+	float:left;
+	position:relative;
+	padding:0 0 1em 0;
+	overflow:hidden;
+}
+/* 2 Column (double page) settings */
+	.doublepage {
+	background:#FFFFFF;		/* right column background colour */
+}
+.doublepage .colleft {
+	right:480px;			/* right column width */
+	background:#FFFFFF;		/* left column background colour */
+}
+.doublepage .col1 {
+	width:440px;			/* left column content width (column width minus left and right padding) */
+	left:500px;			/* right column width plus left column left padding */
+}
+.doublepage .col2 {
+	width:440px;			/* right column content width (column width minus left and right padding) */
+	left:540px;			/* (right column width) plus (left column left and right padding) plus (right column left padding) */
+}
+/* End 2 column double column stuff */
+
+/* subnavpage column container */
+	.colmask_subnavpage {
+	clear:both;
+	float:left;
+	width:100%;			/* width of whole page */
+	overflow:hidden;		/* This chops off any overhanging divs */
+}
+/* subnavpage column settings */
+	.subnavpage .colright,  .subnavpage .colmid,  .subnavpage .colleft, .subnavpage .colleft_back {
+	float:left;
+	width:960px;
+	position:relative;
+}
+.subnavpage .col1,  .subnavpage .col2,  .subnavpage .col3 {
+	float:left;
+	position:relative;
+	padding:0 0 1em 0;
+	overflow:hidden;
+}
+
+	.subnavpage {
+	background:#FFFFFF;		/* right column background colour */
+}
+.subnavpage .colleft {
+	right:720px;			/* right column width */
+	background:#FFFFFF;		/* left column background colour */
+}
+.subnavpage .col1 {
+	width:220px;			/* left column content width (column width minus left and right padding) */
+	left:730px;			/* right column width plus left column left padding */
+}
+.subnavpage .col2 {
+	width:700px;			/* right column content width (column width minus left and right padding) */
+	left:740px;			/* (right column width) plus (left column left and right padding) plus (right column left padding) */
+}
+#leftnav {
+	width:184px;
+	margin: 0 auto 0 auto;
+	position: relative;
+right:6px;
+}
+#leftnav ul {
+	margin-top:0px;
+	margin-bottom:0px;
+	text-indent: -20px;
+	list-style:none;
+}
+
+#leftnav li {font-size:14px; line-height: 18px; padding-top:10px;}
+
+#leftnav a {
+	font-weight:bold;
+}
+#leftnav_top {
+	height:170px;
+	width:220px;
+	background:url(/images/template/subnavcoltop.jpg);
+}
+#leftnav_main {
+	width:220px;
+	background:url(/images/template/subnavcolback.jpg);
+}
+#leftnav_bottom {
+	width:320px;
+	height:25px;
+	background:url(/images/template/subnavcolbottom.jpg);
+}
+
+/* end subnavpage column settings */
+
+/* subnavpage-bore column settings */
+	.subnavpage-bore .colright,  .subnavpage-bore .colmid,  .subnavpage-bore .colleft, .subnavpage-bore .colleft_back {
+	float:left;
+	width:960px;
+	position:relative;
+}
+.subnavpage-bore .col1,  .subnavpage-bore .col2,  .subnavpage-bore .col3 {
+	float:left;
+	position:relative;
+	padding:0 0 1em 0;
+	overflow:hidden;
+}
+
+	.subnavpage-bore {
+	background:#FFFFFF;		/* right column background colour */
+}
+.subnavpage-bore .colleft {
+	right:720px;			/* right column width */
+
+	background:#4F7AAF;		/* left column background colour */
+}
+
+.subnavpage-bore .col1 {
+	width:220px;			/* left column content width (column width minus left and right padding) */
+	left:730px;			/* right column width plus left column left padding */
+}
+.subnavpage-bore .col2 {
+
+	width:680px;			/* right column content width (column width minus left and right padding) */
+
+	left:760px;			/* (right column width) plus (left column left and right padding) plus (right column left padding) */
+}
+#leftnav-bore {
+	width:184px;
+
+	margin: 20px auto 0 auto;
+}
+#leftnav-bore ul {
+	margin-top:0px;
+	margin-bottom:0px;
+	text-indent: -20px;
+	list-style:none;
+}
+
+#leftnav-bore li {font-size:14px; line-height: 18px; padding-top:10px;color:white;}
+#leftnav-bore a {
+	font-weight:bold;
+
+	color:white;
+	margin-bottom:10px;
+}
+
+
+/* end subnavpage-bore column settings */
+
+/* End 2 column double column stuff */
+
+
+#onecoltext {
+	width:920px;
+	margin: 0 auto 0 auto;
+}
+/* misc individual page styles */
+#department_styles h1 {
+	margin-bottom: 0;
+}
+#department_styles hr {
+	margin-bottom: 15px;
+}
+
+/* generic contact form */
+
+#contactForm label {
+	float: left;
+	width: 150px;
+	padding: 0;
+	margin-left: 1.2em;
+}
+#contactForm div {
+	clear: left;
+	padding: 0;
+	margin: 0.4em;
+}
+#contactForm legend {
+	color: #23446D;
+	padding: 0;
+	margin-left: 0.5em;
+	font-weight: bold;
+}
+#contactForm fieldset {
+	width: 450px;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #5082C1;
+}
+#contactForm .txt {
+	border: 1px solid #5082C1;
+}
+#contactForm div.submit {
+	text-align: center;
+}
+.error {
+	font-weight: bold;
+	font-style: italic;
+	color: #bb0000;
+	font-size: 1.2em;
+}
+
+.required {
+  font-size: 1.2em ;
+  font-weight: bold ;
+  color: #980000 ;
+  font-style: italic ;
+} 
+
+/*end generic contact form info */
+
+
+
+/*start gray curvey side box styles*/
+
+#gray_curvebox {
+	width:220px;
+	float:right;
+	background:url(/images/template/gray_curvebox_back.jpg);
+	margin: 20px 0 20px 20px;
+}
+#gray_curvebox_top {
+	height:25px;
+	width:220px;
+	background:url(/images/template/gray_curvebox_top.jpg)
+}
+#gray_curvebox_inside {
+	width:170px;
+	margin: 0 auto 0 auto;
+}
+#gray_curvebox_bot {
+	height:25px;
+	width:220px;
+	background:url(/images/template/gray_curvebox_bot.jpg)
+}
+
+/*end gray curvey side box styles*/
+
+/*Start red info box styles*/
+#infobox {
+	margin: 15px 0pt 15px 15px;
+	background: rgb(255, 255, 255) url(/images/template/infobox_middle.jpg) repeat-y scroll 0% 0%;
+	width: 220px;
+	float: right;
+	-moz-background-clip: -moz-initial;
+	-moz-background-origin: -moz-initial;
+	-moz-background-inline-policy: -moz-initial;
+}
+#infobox h2 {
+	margin: 0pt;
+	color: rgb(255, 255, 255);
+	line-height: 34px;
+	text-align:center;
+}
+#infobox_head {
+	background: transparent url(/images/template/infobox_top.jpg) no-repeat scroll 0% 0%;
+	width: 220px;
+	height: 32px;
+	-moz-background-clip: -moz-initial;
+	-moz-background-origin: -moz-initial;
+	-moz-background-inline-policy: -moz-initial;
+}
+#infobox_middle {
+	background: transparent url(/images/template/infobox_middle.jpg) repeat-y scroll 0% 0%;
+	-moz-background-clip: -moz-initial;
+	-moz-background-origin: -moz-initial;
+	-moz-background-inline-policy: -moz-initial;
+}
+#inside_the_box {
+	margin: 10px 20px 0pt 0pt;
+	width: 200px;
+}
+#infobox_bottom {
+	background: transparent url(/images/template/infobox_bottom.jpg) repeat scroll 0% 0%;
+	width: 220px;
+	height: 2px;
+	-moz-background-clip: -moz-initial;
+	-moz-background-origin: -moz-initial;
+	-moz-background-inline-policy: -moz-initial;
+}
+
+/*end red info box sytles */
+
+/* for catalog course listings */
+ul.course_details { 
+	list-style-type: none ;
+}
+ul.course_details li {
+	font-size:1.2em
+}
+
+table.GeneratedTable {
+width:85%;
+background-color:#FFFFFF;
+border-collapse:collapse;border-width:1px;
+border-color:black;
+border-style:solid;
+color:#000000;
+}
+
+table.GeneratedTable td, table.GeneratedTable th {
+border-width:1px;
+border-color:black;
+border-style:solid;
+padding:3px;
+}
+
+table.GeneratedTable thead {
+background-color:#FFFFFF;
+}
+</style>
+
+#privacy {position:relative;top:-32px;}
+#privacy p {margin-top:0px;padding-top:0px;}
+
